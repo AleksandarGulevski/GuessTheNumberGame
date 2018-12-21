@@ -6,7 +6,7 @@ public class GuessTheNumberGame {
        public static void main(String[] args) {
 
             int anyRandomNumber = (int) (Math.random() * 100) + 1;
-            boolean winner = false;
+            boolean isWinner = false;
 
            System.out.print("I`m thinking of a number between 1 and 100 (Including both).\n" +
                    " Can you guess what it is?\n" +
@@ -26,14 +26,14 @@ public class GuessTheNumberGame {
 
 
                } else {
-                 winner = true;
+                 isWinner = true;
                  break;
 
 
                }
            }
 
-           if (winner) {
+           if (isWinner) {
                System.out.println("You guess it right. You are the champion!");
 
            } else {
